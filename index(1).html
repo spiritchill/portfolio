@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mayank | ML Engineer & Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Animated background canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Cursor glow -->
+  <div id="cursor-glow"></div>
+
+  <!-- NAV -->
+  <header id="navbar">
+    <nav class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>Mayank<span class="logo-bracket">/&gt;</span>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certs</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-right">
+        <a href="#contact" class="nav-cta">Hire Me</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span class="tag-dot"></span>
+          Available for opportunities
+        </div>
+        <h1 class="hero-name">
+          Hi, I'm <span class="gradient-text">Mayank</span>
+        </h1>
+        <div class="hero-typed-wrapper">
+          <span class="hero-typed" id="typed-text"></span><span class="typed-cursor">|</span>
+        </div>
+        <p class="hero-bio">
+          I build intelligent systems that bridge the gap between raw data and real-world impact —
+          from computer vision pipelines to full-stack ML-powered applications.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">View My Work</a>
+          <a href="#contact" class="btn-ghost">Let's Talk</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Projects</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">200+</span><span class="stat-label">LeetCode</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Certs</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="profile-ring">
+          <div class="profile-img-wrapper">
+            <img src="pic.webp" alt="Jake" class="profile-img" onerror="this.style.display='none';this.parentElement.classList.add('no-img')" />
+            <div class="profile-placeholder">JK</div>
+          </div>
+          <div class="ring ring-1"></div>
+          <div class="ring ring-2"></div>
+          <div class="ring ring-3"></div>
+        </div>
+        <div class="floating-badge badge-1"><i data-lucide="brain" class="badge-icon"></i> ML</div>
+        <div class="floating-badge badge-2"><i data-lucide="eye" class="badge-icon"></i> CV</div>
+        <div class="floating-badge badge-3"><i data-lucide="code-2" class="badge-icon"></i> Python</div>
+      <div class="floating-badge badge-4"><i data-lucide="code-2" class="badge-icon"></i> DSA</div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="section-label">01 / About</div>
+      <h2 class="section-title">Who I Am</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>I'm a Computer Science student specializing in <strong>Machine Learning and AI</strong>, passionate about building systems that solve real problems. My work spans computer vision, deep learning, and full-stack deployment.</p>
+          <p>Beyond the code, I've solved 200+ DSA problems on LeetCode, completed certifications from DeepLearning.AI, Stanford, and IBM, and I'm always working on something new.</p>
+          <div class="about-links">
+            <a href="https://github.com/spiritchill" target="_blank" class="about-link">
+              <i data-lucide="github"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/mayank-singh-chauhan-64a1ba302/" target="_blank" class="about-link">
+              <i data-lucide="linkedin"></i> LinkedIn
+            </a>
+            <a href="#" class="about-link">
+              <i data-lucide="file-text"></i> Resume
+            </a>
+          </div>
+        </div>
+        <div class="education-timeline reveal">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-year">2023 – 2027</span>
+              <h4>B.Tech in Computer Science</h4>
+              <p>Specialization in AI/ML · Currently Pursuing</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-year">2023</span>
+              <h4>Class 12 · CBSE</h4>
+              <p>PCM with Computer Science</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="section-label">02 / Skills</div>
+      <h2 class="section-title">Technical Stack</h2>
+      <div class="skills-categories">
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title"><span class="mono">//</span> AI / ML</h3>
+          <div class="skill-chips">
+            <span class="chip chip-ml">TensorFlow</span>
+            <span class="chip chip-ml">Keras</span>
+            <span class="chip chip-ml">Scikit-learn</span>
+            <span class="chip chip-ml">OpenCV</span>
+            <span class="chip chip-ml">Pandas</span>
+            <span class="chip chip-ml">NumPy</span>
+            <span class="chip chip-ml">SHAP</span>
+            <span class="chip chip-ml">LSTM</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title"><span class="mono">//</span> Dev Tools</h3>
+          <div class="skill-chips">
+            <span class="chip chip-dev">Python</span>
+            <span class="chip chip-dev">Streamlit</span>
+            <span class="chip chip-dev">FastAPI</span>
+            <span class="chip chip-dev">Git / GitHub</span>
+            <span class="chip chip-dev">Linux</span>
+            <span class="chip chip-dev">Jupyter</span>
+            <span class="chip chip-dev">Google Colab</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title"><span class="mono">//</span> Databases</h3>
+          <div class="skill-chips">
+            <span class="chip chip-db">MySQL</span>
+            <span class="chip chip-db">MongoDB</span>
+            <span class="chip chip-db">PostgreSQL</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title"><span class="mono">//</span> Core CS</h3>
+          <div class="skill-chips">
+            <span class="chip chip-cs">Data Structures</span>
+            <span class="chip chip-cs">Algorithms</span>
+            <span class="chip chip-cs">OOP</span>
+            <span class="chip chip-cs">Computer Networks</span>
+            <span class="chip chip-cs">Bash Scripting</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="section-label">03 / Projects</div>
+      <h2 class="section-title">Featured Work</h2>
+      <div class="projects-grid">
+
+        <div class="project-card reveal featured-card">
+          <div class="project-header">
+            <div class="project-number mono">01</div>
+            <div class="project-links">
+              <a href="https://github.com/spiritchill/brain_tumor_detection" target="_blank" title="GitHub"><i data-lucide="github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Brain Tumor Detection System</h3>
+          <p class="project-desc">Deep learning–based MRI classification system using a custom CNN trained to detect Glioma, Meningioma, Pituitary, and No Tumor cases with confidence scoring and downloadable clinical PDF reports.</p>
+          <div class="project-tags">
+            <span>Python</span><span>TensorFlow</span><span>CNN</span><span>OpenCV</span><span>Streamlit</span><span>ReportLab</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-badge">Medical AI</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <div class="project-number mono">02</div>
+            <div class="project-links">
+              <a href="https://github.com/spiritchill/emotion_based_movie_recommender_system" target="_blank" title="GitHub"><i data-lucide="github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Emotion-Based Movie Recommender</h3>
+          <p class="project-desc">Real-time facial emotion detection using CNN and OpenCV, integrated with TMDB API for personalized movie recommendations based on detected mood across 7 emotion classes.</p>
+          <div class="project-tags">
+            <span>Python</span><span>CNN</span><span>Streamlit</span><span>TMDB API</span><span>OpenCV</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-badge">Computer Vision</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <div class="project-number mono">03</div>
+            <div class="project-links">
+              <a href="#" target="_blank" title="GitHub"><i data-lucide="github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Stock Price Prediction (LSTM)</h3>
+          <p class="project-desc">Time-series forecasting model using LSTM neural networks trained on historical market data. Includes data preprocessing, feature scaling, and visualization of predicted vs actual prices.</p>
+          <div class="project-tags">
+            <span>Python</span><span>LSTM</span><span>TensorFlow</span><span>Pandas</span><span>Matplotlib</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-badge">Forecasting</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="section">
+      <div class="section-label">04 / Certifications</div>
+      <h2 class="section-title">Credentials</h2>
+      <div class="certs-grid">
+
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i data-lucide="award"></i></div>
+          <div class="cert-info">
+            <h4>Machine Learning Specialization</h4>
+            <span class="cert-issuer">DeepLearning.AI · Stanford University (Coursera)</span>
+          </div>
+          <div class="cert-badge">Completed</div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i data-lucide="award"></i></div>
+          <div class="cert-info">
+            <h4>AI Fundamentals</h4>
+            <span class="cert-issuer">IBM</span>
+          </div>
+          <div class="cert-badge">Completed</div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i data-lucide="cloud"></i></div>
+          <div class="cert-info">
+            <h4>Oracle Cloud Infrastructure 2025 Certified AI</h4>
+            <span class="cert-issuer">Oracle</span>
+          </div>
+          <div class="cert-badge">Certified</div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i data-lucide="code-2"></i></div>
+          <div class="cert-info">
+            <h4>200+ DSA Problems</h4>
+            <span class="cert-issuer">LeetCode</span>
+          </div>
+          <div class="cert-badge">Active</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="section-label">05 / Contact</div>
+      <h2 class="section-title">Let's Build Something</h2>
+      <div class="contact-wrapper">
+        <div class="contact-left reveal">
+          <p>I'm open to internships, collaborations, and full-time opportunities in ML/AI engineering. Drop me a message and I'll get back to you.</p>
+          <div class="contact-links">
+            <a href="https://github.com/spiritchill" target="_blank" class="contact-link">
+              <i data-lucide="github"></i>
+              <span>github.com/spiritchill</span>
+            </a>
+            <a href="mailto:1411mayank@gmail.com" class="contact-link">
+              <i data-lucide="mail"></i>
+              <span>1411mayank@gmail.com</span>
+            </a>
+            <a href="https://www.linkedin.com/in/mayank-singh-chauhan-64a1ba302/" target="_blank" class="contact-link">
+              <i data-lucide="linkedin"></i>
+              <span>https://www.linkedin.com/in/mayank-singh-chauhan-64a1ba302/</span>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contact-form">
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary full-width">
+            Send Message <i data-lucide="send"></i>
+          </button>
+          <p class="form-note" id="form-note"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p class="mono">&lt;Built with HTML, CSS & JS · <span id="year"></span> Mayank /&gt;</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
